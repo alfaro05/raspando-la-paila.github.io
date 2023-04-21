@@ -14,14 +14,6 @@ body{
     font-family: 'Patua One', cursive;
     color:#563C26;
 }
-.grid-container{
-    display: grid;
-    grid-template-areas: "banner-area"
-    "nav-bar-area"
-    "body-area";
-    padding: 0px;
-    margin: 0px;
-}
 h1, h2, h3{
     font-family: 'Cookie', cursive;
     color: #99BC9D;
@@ -30,6 +22,38 @@ h1, h2, h3{
 }
 h1{
     font-size: 50px;
+}
+hr{
+    box-shadow: 1px 0px 1px black, 0px 1px 1px black,
+    -1px 0px 1px black, 0px -1px 1px black;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "banner-area"
+    "nav-bar-area"
+    "body-area";
+    padding: 0px;
+    margin: 0px;
+}
+.banner{
+    background-color: #A7443B;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    overflow-x: auto;
+    text-align: center;
+}
+.banner img{
+    padding: 0px;
+    margin: 0px;
+}
+.banner h1, .banner h2{
+    margin: 0px;
+    padding: 0px;
+}
+.banner h2{
+    font-family: 'Patua One', cursive;
+    font-weight: normal;
 }
 .nav-bar{
     display: flex;
@@ -40,9 +64,8 @@ h1{
     background-color: #A7443B;
     padding: 0px;
     margin: 0px;
-    border-radius: 6px;
 }
-.nav-bar a, .nav-bar .dropdown-item{
+.nav-bar a{
     background-color: #A7443B;
     padding: 5px 5vw 5px 5vw;
     border-radius: 6px;
@@ -52,16 +75,12 @@ h1{
     text-shadow: 1px 1px 1px black;
     margin: 0px;
 }
-.dropdown-item{
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-}
 .dropdown-a{
+    display: inline-block;
     padding: 0px;
     margin: 0px;
 }
-.nav-bar a:hover, .nav-bar .dropdown-item:hover{
+.nav-bar a:hover{
     background-color: #99BC9D;
     color: #A7443B;text-shadow: 1px 0px 1px white, 0px 1px 1px white,
     -1px 0px 1px white, 0px -1px 1px white;
@@ -71,7 +90,7 @@ h1{
     display: none;
     position: absolute;
 }
-.dropdown-item:hover .dropdown-menu{
+.dropdown-a:hover .dropdown-menu{
     display: block;
     display: flex;
     flex-direction: column;

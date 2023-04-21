@@ -1,0 +1,85 @@
+/*COLOR PALETTE:
+>>>Soft background color
+    #F5DEC1
+>>>Strong color for icons
+    #A7443B
+>>>Cool color for titles and more elements
+    #99BC9D
+>>>Dark color for text
+    #563C26
+*/
+
+body{
+    background-color: #F5DEC1;
+    font-family: 'Patua One', cursive;
+    color:#563C26;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "banner-area"
+    "nav-bar-area"
+    "body-area";
+    padding: 0px;
+    margin: 0px;
+}
+h1, h2, h3{
+    font-family: 'Cookie', cursive;
+    color: #99BC9D;
+    text-shadow: 1px 0px 1px black, 0px 1px 1px black,
+        -1px 0px 1px black, 0px -1px 1px black;
+}
+h1{
+    font-size: 50px;
+}
+.nav-bar{
+    display: flex;
+    grid-area: nav-bar-area;
+    flex-direction: row;
+    justify-content: end;
+    position: sticky;
+    background-color: #A7443B;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 6px;
+}
+.nav-bar a, .nav-bar .dropdown-item{
+    background-color: #A7443B;
+    padding: 5px 5vw 5px 5vw;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: #F5DEC1;
+    text-shadow: 1px 1px 1px black;
+    margin: 0px;
+}
+.dropdown-item{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown-a{
+    padding: 0px;
+    margin: 0px;
+}
+.nav-bar a:hover, .nav-bar .dropdown-item:hover{
+    background-color: #99BC9D;
+    color: #A7443B;text-shadow: 1px 0px 1px white, 0px 1px 1px white,
+    -1px 0px 1px white, 0px -1px 1px white;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+}
+.dropdown-item:hover .dropdown-menu{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    border: dotted 2px #563C26;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 95vw;
+}

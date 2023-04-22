@@ -85,6 +85,7 @@ hr{
     flex-direction: row;
     justify-content: end;
     position: sticky;
+    top: 0;
     background-color: #A7443B;
     padding: 0px;
     margin: 0px;

@@ -99,6 +99,9 @@ hr{
     text-shadow: 1px 1px 1px black;
     margin: 0px;
 }
+.dropdown-menu a{
+    padding: 5px 4vw 5px 4vw;
+}
 .dropdown-item{
     display: inline-block;
     margin: 0px;

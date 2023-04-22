@@ -13,6 +13,8 @@ body{
     background-color: #F5DEC1;
     font-family: 'Patua One', cursive;
     color:#563C26;
+    padding: 0px;
+    margin: 0px;
 }
 h1, h2, h3{
     font-family: 'Cookie', cursive;
@@ -23,6 +25,9 @@ h1, h2, h3{
 }
 h1{
     font-size: 50px;
+}
+.main-content{
+    margin: 1vw;
 }
 .body-content h2{
     font-size: 35px;
@@ -130,6 +135,6 @@ hr{
     border-radius: 5px;
    /* position: absolute;
     bottom: 0; */
-    width: 95vw;
+    width: 99vw;
     text-align: center;
 }
